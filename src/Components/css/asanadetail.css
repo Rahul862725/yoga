@@ -1,0 +1,66 @@
+.asanaName{
+    font-size: 2.5rem;
+}
+.asanaImg{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 15px;
+}
+.content{
+    width: 55%;
+    margin: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+.components{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.rightCompo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px; */
+}
+
+/* Media-queries
+ */
+
+ @media screen and (max-width: 1000px) {
+    .asanaImg{
+        width: 75%;
+    }
+    .content{
+        width: 75%;
+    }
+    .components{
+        margin-bottom: 0px;
+    }
+    .rightCompo{
+        flex-direction: column;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .asanaImg{
+        width: 85%;
+        height: 40%;
+        margin: 5px;
+    }
+    .content{
+        width: 80%;
+        font-size: 15px;
+    }
+ }
+ @media screen and (max-width: 400px) {
+    .asanaName{
+        font-size: 2.0rem;
+    }
+    .content{
+        margin: 10px;
+    }
+ }

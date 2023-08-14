@@ -1,0 +1,139 @@
+.container {
+  /* display: flex; */
+  width: 100vw;
+  height: 70vh;
+  /* overflow: hidden; */
+}
+
+.imageItems {
+  width: 100%;
+  height: '50%';
+}
+
+.con {
+  width: 100%;
+  
+}
+.crow{
+  width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.crow-img{
+  width: 100%;
+} 
+
+.homeContent{
+  margin: 10px;
+  text-align: center;
+}
+.main-heading{
+  font-size: 25px;
+  font-weight: bold;
+}
+.content2{
+  text-align: justify;
+  margin: 20px 40px;
+}
+/* Mentor  */
+.mentor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 5px;
+  background-color: rgb(236, 240, 245);
+  box-shadow: rgba(9, 29, 202, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+.about{
+  display: flex;
+  justify-content: space-around;
+
+}
+.menImg{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 20px; */
+} 
+.mimg{
+  width: 60%;
+  height: 70%;
+  border-radius: 60%;
+  transition: all 1s ease-in-out;
+}
+.mimg:hover{
+  transform: scale(1.1);
+}
+.mentorName{
+  margin: 13px;
+  font-size: large
+}
+.mentorContent{
+  padding: 10px;
+  width: 65%;
+  margin-top: 13px;
+  text-align: justify;
+}
+
+.fix{
+  /* object-fit: none; */
+  height: 750px;
+  top:10%;
+  object-position: 0px -140px
+}
+
+/* Media-Queries */
+@media screen and (max-width: 800px){
+  .crow{
+    width: 100%;
+    height: 420px;
+  }
+  .fix{
+    width: 100%;
+    height: 550px;
+  }
+  .main-heading{
+    font-size: 22px;
+  }
+  .content2{
+    line-height: 1.2;
+    margin: 10px 10px;
+  }
+  .mentor{
+    padding: 4px;
+    width: 92%;
+  }
+  .mimg{
+    width: 140%;
+    height: 90%;
+  }
+  .mentorName{
+    margin: 3px;
+    font-size: large
+  }
+  .about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mentorContent{
+    width: 100%;
+    line-height: 1.2;
+  }
+} 
+@media screen and (max-width: 600px){
+  .crow{
+    width: 100%;
+    height: 300px;
+  }
+  .fix{
+    width: 100%;
+    height: 450px;
+  }
+}
