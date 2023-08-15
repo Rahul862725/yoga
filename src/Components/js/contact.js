@@ -5,7 +5,7 @@ export default function Contact() {
   return (
       <div className="form">
         <h1 className='heading'>Send Your Message</h1>
-        <form action="http://localhost:8000/contact" method="post">
+        <form action="https://nitkkr-yoga-back.onrender.com/contact" method="post">
         <div className="detail">
         <input className="text textarea" type="text" name="fullName" placeholder="FullName"/>
         </div>
